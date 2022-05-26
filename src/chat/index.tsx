@@ -74,7 +74,7 @@ const Chat = ({chatId}: any) => {
           }}
           onEndReachedThreshold={0.3}
           onMomentumScrollBegin={() => setMomentumScroll(false)}
-          ListFooterComponent={<ActivityIndicator />}
+          ListFooterComponent={isLoading ? <ActivityIndicator /> : null}
         />
         <Footer openModal={openModalRecorder} />
       </KeyboardAvoidingView>
