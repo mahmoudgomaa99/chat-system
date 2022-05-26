@@ -8,8 +8,7 @@ const ImageMessage = ({image_url, created_at, message_txt}: any) => {
     <Pressable>
       <View>
         <Image source={{uri: image_url}} style={styles.imageContent} />
-        {/* <TimeStamp image createdAt={created_at} /> */}
-        {message_txt && <Text style={styles.text}>{message_txt}</Text>}
+        {/* {message_txt && <Text style={styles.text}>{message_txt}</Text>} */}
       </View>
     </Pressable>
   );
